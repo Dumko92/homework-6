@@ -960,13 +960,12 @@ padding-bottom: 94px;
     border-radius: 4px;
     margin-bottom: 10px;
     padding-left: 30px;
-    outline: none;
+    outline-color: transparent;
 }
 
 
 .modal-input:not(:placeholder-shown) {
     border-color: #2196F3;
-    
 }
 
 
@@ -1000,6 +999,33 @@ padding-bottom: 94px;
 }
 
 
+.check-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+
+.check-text .check-link span {
+    width: 16px;
+    height: 15px;
+    border: 2px solid rgba(33, 33, 33, 1);
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.check-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: #2196F3;
+}
+
+
 .is-hidden {
     visibility: hidden;
     opacity: 0;
@@ -1009,4 +1035,18 @@ padding-bottom: 94px;
 
 .no-scroll {
     overflow: hidden;
+}
+
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
