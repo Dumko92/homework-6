@@ -965,7 +965,7 @@ padding-bottom: 94px;
 
 
 .modal-input:not(:placeholder-shown) {
-    border-color: #2196F3;
+    border-color: rgba(117, 117, 117, 0.5);
 }
 
 
@@ -976,6 +976,40 @@ padding-bottom: 94px;
     letter-spacing: 0.01em;
     border-color: rgba(117, 117, 117, 0.5);
 }
+
+.modal-input:focus {
+    border-color: var(--accent-color);
+}
+
+
+.modal-input:focus + .modal-soc-icon {
+    fill: var(--accent-color);
+}
+
+
+
+.modal-field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.check-icon {
+    fill: transparent;
+}
+
+.modal-check:checked + .check-text span {
+    background-color: #2196F3;
+    border: none;
+}
+
+
+.modal-check:checked + .check-text + .check-icon {
+    fill: #FFFFFF;
+}
+
+
 
 
 .input-wrap {
@@ -996,6 +1030,7 @@ padding-bottom: 94px;
     border: 1px solid ;
     border-radius: 4px;
     resize:none ;
+    
 }
 
 
@@ -1008,12 +1043,15 @@ padding-bottom: 94px;
 }
 
 
-.check-text .check-link span {
+.check-text span {
     width: 16px;
     height: 15px;
-    border: 2px solid rgba(33, 33, 33, 1);
+    border: 2px solid #212121;
     border-radius: 3px;
     margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .check-link {
