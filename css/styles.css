@@ -781,6 +781,7 @@ padding-bottom: 94px;
 .button-subscribe:hover, 
 .button-subscribe:focus {
     background-color: #188CE8;
+    
 }
     
 .subscribe-soc-icon {
@@ -1041,6 +1042,8 @@ padding-bottom: 94px;
     margin-bottom: 10px;
     padding-left: 30px;
     outline-color: transparent;
+    cursor: pointer;
+    color: var(--accent-color);
 }
 
 
@@ -1101,6 +1104,8 @@ padding-bottom: 94px;
     border-radius: 4px;
     outline-color: transparent;
     padding: 12px 16px;
+    cursor: pointer;
+    color: var(--accent-color);
 }
 
 
@@ -1144,6 +1149,7 @@ padding-bottom: 94px;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .check-icon {
